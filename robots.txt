@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /go/
 Allow: /
 Disallow: /admin/
 Sitemap: https://zonnewijzertuin.nl/sitemap.xml
