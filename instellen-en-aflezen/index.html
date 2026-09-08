@@ -42,11 +42,11 @@ h1,h2,h3,h4{text-wrap:balance;overflow-wrap:break-word}
 .eyebrow::before{content:'';width:42px;height:1px;background:var(--rust);opacity:.7;flex:none}
 
 /* ---- Header ---- */
-.site-header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1.35rem clamp(1.2rem,4vw,3.5rem);transition:background .5s,padding .5s,box-shadow .5s,border-color .5s;border-bottom:1px solid transparent}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:clamp(1rem,3vw,2.5rem);padding:1.35rem clamp(1.2rem,4vw,3.5rem);transition:background .5s,padding .5s,box-shadow .5s,border-color .5s;border-bottom:1px solid transparent}
 .site-header.scrolled{background:rgba(201,190,167,.94);backdrop-filter:blur(6px);padding-top:.85rem;padding-bottom:.85rem;border-bottom:1px solid var(--line);box-shadow:0 10px 30px -24px rgba(28,24,18,.8)}
 .wordmark{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(.82rem,1.5vw,1rem);letter-spacing:.3em;text-transform:uppercase;color:var(--ink);white-space:nowrap;text-decoration:none}
 .site-header.ghost:not(.scrolled) .wordmark{color:#f0e7d4;text-shadow:0 1px 12px rgba(0,0,0,.45)}
-.nav{display:flex;gap:clamp(.9rem,2.2vw,2rem);align-items:center}
+.nav{display:flex;gap:clamp(.9rem,2.2vw,2rem);align-items:center;flex-wrap:wrap;justify-content:flex-end;min-width:0}
 .nav a{font-family:'Cinzel',serif;font-weight:400;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--ink);opacity:.82;padding:.3em 0;position:relative;transition:opacity .3s,color .3s}
 .site-header.ghost:not(.scrolled) .nav a{color:#e9dfca}
 .nav a::after{content:'';position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--rust);transition:width .35s}
